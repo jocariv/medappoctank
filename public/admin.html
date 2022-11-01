@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="viho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <title>Admin</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="../../css2.css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="../../css2-1.css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="../../css2-2.css?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.css">
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+  </head>
+  <body>
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader">    
+        <div class="loader-p"></div>
+      </div>
+    </div>
+    <!-- Loader ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-main-header">
+        <div class="main-header-right row m-0">
+          <div class="main-header-left">
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a></div>
+            <div class="dark-logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/dark-logo.png" alt=""></a></div>
+            <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle"></i></div>
+          </div>
+          <div class="left-menu-header col">
+            <!--
+            <ul>
+              <li>
+                <form class="form-inline search-form">
+                  <div class="search-bg"><i class="fa fa-search"></i>
+                    <input class="form-control-plaintext" placeholder="Search here.....">
+                  </div>
+                </form><span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
+              </li>
+            </ul>
+          -->
+
+          </div>
+          <div class="nav-right col pull-right right-menu p-0">
+            <ul class="nav-menus">
+
+             <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
+              <!-- <li class="onhover-dropdown">
+                <div class="bookmark-box"><i data-feather="star"></i></div>
+                <div class="bookmark-dropdown onhover-show-div">
+                  <div class="form-group mb-0">
+                    <div class="input-group">
+                      <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div>
+                      <input class="form-control" type="text" placeholder="Search for bookmark...">
+                    </div>
+                  </div>
+                  <ul class="m-t-5">
+                    <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="inbox"></i>Email<span class="pull-right"><i data-feather="star"></i></span></li>
+                    <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="message-square"></i>Chat<span class="pull-right"><i data-feather="star"></i></span></li>
+                    <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="command"></i>Feather Icon<span class="pull-right"><i data-feather="star"></i></span></li>
+                    <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="airplay"></i>Widgets<span class="pull-right"><i data-feather="star">   </i></span></li>
+                  </ul>
+                </div>
+              </li> -->
+            <!--  <li class="onhover-dropdown">
+                <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span></div>
+                <ul class="notification-dropdown onhover-show-div">
+                  <li>
+                    <p class="f-w-700 mb-0">You have 3 Notifications<span class="pull-right badge badge-primary badge-pill">4</span></p>
+                  </li>
+                  <li class="noti-primary">
+                    <div class="media"><span class="notification-bg bg-light-primary"><i data-feather="activity"> </i></span>
+                      <div class="media-body">
+                        <p>Delivery processing </p><span>10 minutes ago</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="noti-secondary">
+                    <div class="media"><span class="notification-bg bg-light-secondary"><i data-feather="check-circle"> </i></span>
+                      <div class="media-body">
+                        <p>Order Complete</p><span>1 hour ago</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="noti-success">
+                    <div class="media"><span class="notification-bg bg-light-success"><i data-feather="file-text"> </i></span>
+                      <div class="media-body">
+                        <p>Tickets Generated</p><span>3 hour ago</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="noti-danger">
+                    <div class="media"><span class="notification-bg bg-light-danger"><i data-feather="user-check"> </i></span>
+                      <div class="media-body">
+                        <p>Delivery Complete</p><span>6 hour ago</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+
+              <li>
+                <div class="mode"><i class="fa fa-moon-o"></i></div>
+              </li>
+
+             <!-- <li class="onhover-dropdown"><i data-feather="message-square"></i>
+                <ul class="chat-dropdown onhover-show-div">
+                  <li>
+                    <div class="media"><img class="img-fluid rounded-circle me-3" src="../assets/images/user/4.jpg" alt="">
+                      <div class="media-body"><span>Ain Chavez</span>
+                        <p class="f-12 light-font">Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12">32 mins ago</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media"><img class="img-fluid rounded-circle me-3" src="../assets/images/user/1.jpg" alt="">
+                      <div class="media-body"><span>Erica Hughes</span>
+                        <p class="f-12 light-font">Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12">58 mins ago</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media"><img class="img-fluid rounded-circle me-3" src="../assets/images/user/2.jpg" alt="">
+                      <div class="media-body"><span>Kori Thomas</span>
+                        <p class="f-12 light-font">Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12">1 hr ago</p>
+                    </div>
+                  </li>
+                  <li class="text-center"> <a class="f-w-700" href="javascript:void(0)">See All     </a></li>
+                </ul>
+              </li> -->
+
+              <li class="onhover-dropdown p-0">
+                <button class="btn btn-primary-light" type="button"><a href="login.html"><i data-feather="log-out"></i>Log out</a></button>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
+        </div>
+      </div>
+      <!-- Page Header Ends                              -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper horizontal-menu">
+        <!-- Page Sidebar Start-->
+        <header class="main-nav">
+          <div class="sidebar-user text-center"><a class="setting-primary" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="../assets/images/dashboard/1.png" alt="">
+            <div class="badge-bottom"><span class="badge badge-primary">New</span></div><a href="user-profile.html">
+              <h6 class="mt-3 f-14 f-w-600">Emay Walter</h6></a>
+            <p class="mb-0 font-roboto">Departamento</p>
+          
+          </div>
+          <nav>
+            <div class="main-navbar">
+              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+              <div id="mainnav">           
+                <ul class="nav-menu custom-scrollbar">
+                  <li class="back-btn">
+                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                  </li>
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6>General             </h6>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="home"></i><span>Mantenimiento</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="admin.html">Formulario</a></li>
+                    </ul>
+                  </li>
+               
+                
+                 
+                </ul>
+              </div>
+              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+            </div>
+          </nav>
+        </header>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-header">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>Citas Medicas</h3>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="admin.html">Home</a></li>
+                    <li class="breadcrumb-item">Tables</li>
+                    <li class="breadcrumb-item">Data Tables</li>
+                    <li class="breadcrumb-item active">Data Sources</li>
+                  </ol>
+                </div>
+                <div class="col-sm-6">
+                  <!-- Bookmark Start-->
+                  <div class="bookmark">
+                    <ul>
+                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Tables"><i data-feather="inbox"></i></a></li>
+                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Chat"><i data-feather="message-square"></i></a></li>
+                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Icons"><i data-feather="command"></i></a></li>
+                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Learning"><i data-feather="layers"></i></a></li>
+                      <li><a href="javascript:void(0)"><i class="bookmark-search" data-feather="star"></i></a>
+                        <form class="form-inline search-form">
+                          <div class="form-group form-control-search">
+                            <input type="text" placeholder="Search..">
+                          </div>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Bookmark Ends-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- HTML (DOM) sourced data  Starts-->
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+
+                   <h5>Buscar paciente</h5>
+                   <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#exampleModal">Buscar</button>
+                  </div>
+                  <div class="card-body">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Buscar</h5>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="">Buscar paciente por codigo</label>
+                                <input type="text" class="form-control" id="codigo" placeholder="Example 7102" id="id_producto">
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" id="buscar" type="button">Search</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModaldos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                           <!--  <form action="form" method="post">-->
+                                <label for="">Evaluación</label>
+                                <select name="" class="form-control" id="evaluacion">
+                                  <option value="">--Seleccionar--</option>
+                                </select>
+                               
+                                <label for="">Monitoreo</label>
+                                <input type="hidden" id="monitoreohide">
+                                <select name="" class="form-control" id="monitoreo">
+                                  <option value="">--Seleccionar--</option>
+                                </select>
+
+                                <label for="">Resultado tabulado 1</label>
+
+                                <select name="" class="form-control" id="tabuladouno">
+                                  <option value="">--Seleccionar--</option>
+                                </select>
+
+                                <label for="">Tratamiento 1</label>
+                                <select name="" class="form-control" id="tratamientouno">
+                                  <option value="">Seleccionar</option>
+                                </select>
+                                <label for="">Tratamiento 2</label>
+                                <select name="" class="form-control" id="tratamientodos">
+                                  <option value="">Seleccionar</option>
+                                </select>
+                                <label for="">Tratamiento 3</label>
+                                <select name="" class="form-control" id="tratamientotres">
+                                  <option value="">Seleccionar</option>
+                                </select>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" id="update" type="submit">Update</button>
+                            </div>
+                        <!--</form>-->
+                        
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="table-responsive">
+                      <table class="display" id="data-source-1" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Codigo</th>
+                            <th>Nombre y Apellidos</th>
+                            <th>Prueba Labotorio</th>
+                            <th>Resultados Labo1</th>
+                            <th>Condicion Cronica</th>
+                            <th>Monitoreo</th>
+                            <th>Diagnostico Nuevo</th>
+                            <th>Evaluación</th>
+                            <th>Sexo</th>
+                            <th>Riesgo</th>
+                            <th>Adherencia</th>
+                            <th>Tratamiento1</th>
+                            <th>Tratamiento2</th>
+                            <th>Tratamiento3</th>
+                            <th>Clasificacionimc</th>
+                            <th>Edad</th>
+                            <th>Tratamiento</th>
+                            <th>Accion</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody id="listatable">
+
+                          
+
+                         
+                        </tbody>
+                       <!-- <tfoot>
+                          <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                          </tr>
+                        </tfoot> -->
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- HTML (DOM) sourced data  Ends-->
+              <!-- Ajax sourced data  Starts-->
+              
+              <!-- Ajax sourced data Ends-->
+              <!-- Javascript sourced data  Starts-->
+            
+              <!-- Javascript sourced data Ends-->
+              <!-- Server-side processing Starts-->
+              
+              
+             
+
+
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+        </div>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 footer-copyright">
+                <p class="mb-0">Copyright 2022 © app.</p>
+              </div>
+              <div class="col-md-6">
+               <!-- <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i></p> -->
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/config.js"></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugins JS start-->
+    <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="../assets/js/tooltip-init.js"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/theme-customizer/customizer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- login js-->
+    <!-- Plugin used-->
+    <script>
+      
+          
+          $("#buscar").on("click",function(){
+
+            let codigo=$("#codigo").val();
+            //alert(codigo);
+
+            $.get("https://tsg6s7x0zb.execute-api.us-east-1.amazonaws.com/prod/product?codigo="+codigo,function(data){
+
+                //console.log(data["price"]);
+                $("#monitoreohide").val(data["monitoreo"]);
+
+                $("#exampleModal").modal("hide");
+                let contenido="";
+                contenido +="<tr>";
+                contenido +="<td>"+data["codigo"]+"</td>";
+                contenido +="<td>"+data["nombre"]+ " "+ data["Apellido"]+ "</td>";
+                contenido +="<td>"+data["pruebaslabotorio"]+"</td>";
+                contenido +="<td>"+data["resultadoslabo1"]+"</td>";
+                contenido +="<td>"+data["condicioncronica"]+"</td>";
+                contenido +="<td>"+data["monitoreo"]+"</td>";
+                contenido +="<td>"+data["diagnosticonuevo"]+"</td>";
+                contenido +="<td>"+data["evaluacion"]+"</td>";
+                contenido +="<td>"+data["sexo"]+"</td>";
+                contenido +="<td>"+data["riesgo"]+"</td>";
+                contenido +="<td>"+data["adherencia"]+"</td>";
+                contenido +="<td>"+data["tratamiento1"]+"</td>";
+                contenido +="<td>"+data["tratamiento2"]+"</td>";
+                contenido +="<td>"+data["tratamiento3"]+"</td>";
+                contenido +="<td>"+data["clasificacionimc"]+"</td>";
+                contenido +="<td>"+data["edad"]+"</td>";
+                contenido +="<td>"+data["tratamiento"]+"</td>";
+                contenido +="<td>";
+                contenido +="<button type='button' onclick='abrirmolda("+data["codigo"]+")' class='btn btn-info' data-bs-toggle='modal' data-original-title='test' data-bs-target='#exampleModaldos'> Edit </button>";
+                //contenido +="<button type='button' onclick='abrirmolda("+data["codigo"]+")' class='btn btn-danger' > Delete </button>";
+                contenido += "</td>";
+                contenido +="</tr>";
+
+                document.getElementById("listatable").innerHTML=contenido;
+
+            })
+
+          })
+
+          function abrirmolda(id){
+
+            $.get("https://tsg6s7x0zb.execute-api.us-east-1.amazonaws.com/prod/product?codigo="+id,function(data){
+
+              let  monitoreo=$("#monitoreohide").val();
+              let contenido="";
+              contenido +='<option value="">--Seleccionar--</option>';
+
+             //if(monitoreo==data["monitoreo"]){
+                 //contenido +='<option value="'+data["monitoreo"]+'" selected>'+data["monitoreo"]+'</option>';
+             // }else{
+                contenido +='<option value="evaluacion" > Evaluación</option>';
+                contenido +='<option value="mejora" > Mejora</option>';
+                contenido +='<option value="reproceso" >Reproceso</option>';
+                contenido +='<option value="estancamiento" >Estancamiento</option>';
+
+             //}
+
+              document.getElementById("monitoreo").innerHTML=contenido;
+
+              //alert(monitoreo);
+
+              
+              
+             
+                
+
+
+            })
+          }
+
+          $("#update").on("click",function(){
+
+            let urlg='http://127.0.0.1:8080/form';
+
+            let frm=new FormData();
+            let codigo= $("#codigoid").val();
+            let color=$("#colores").val();
+            let price=  $("#price").val();
+
+            let data = `codigo=${codigo}`; 
+            frm.append("codigo",codigo);
+            frm.append("color",color);
+            frm.append("price",price);
+            axios.post(urlg, {
+
+                  productId: codigo,
+                  color: color,
+                  price: price
+
+                })
+                .then(function (response) {
+
+                  console.log(response);
+
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+
+            /*$.ajax({
+                type:"POST",
+                url:urlg+"/form",
+                //dataType: "json",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body:data,
+                
+                processData: false,
+                contentType: false,
+                success:function(data){
+                    console.log( data);
+
+                }
+            })*/
+
+
+          })
+
+
+
+    </script>
+  </body>
+</html>
